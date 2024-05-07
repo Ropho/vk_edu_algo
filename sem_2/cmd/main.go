@@ -1,6 +1,8 @@
 package main
 
-import "vk_algo/sem_2"
+import (
+	"vk_algo/sem_2"
+)
 
 func main() {
 
@@ -35,7 +37,7 @@ func main() {
 		},
 		{
 			Val:       17,
-			NextIndex: 2,
+			NextIndex: -1,
 		},
 	})
 

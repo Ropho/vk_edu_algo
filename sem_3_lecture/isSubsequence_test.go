@@ -127,3 +127,17 @@ func Test_isSubsequencePointers(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_isSubsequencePointers(b *testing.B) {
+
+	for i := 0; i < b.N; i++ {
+		isSubsequencePointers("quefio", "uio")
+	}
+}
+
+func Benchmark_isSubsequenceQueue(b *testing.B) {
+
+	for i := 0; i < b.N; i++ {
+		isSubsequenceQueue("quefio", "uio")
+	}
+}
